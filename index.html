@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <title>BAGS HOUSE</title>
+  <link rel="shortcut icon" href="images/bag.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+      
+</style>
+<body>
+<h1 style="text-align: center"><b>BAGS HOUSE</b></h1>
+<table align="center">
+    <tr>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/a.jpg" id="div1" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button1">Fade Out</a>
+            </div>
+        </td>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/b.jpg" id="div2" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button2">Fade Toggle</a>
+            </div>
+        </td>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/c.jpg" id="div3" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button3">Slide Up</a>
+            </div>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/d.jpg" id="div4" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button4">Slide Toggle</a>
+            </div>
+        </td>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/e.jpg" id="div5" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button5" style="margin-left: 140px; padding: 10px 20px">Hide</a>
+                <a class="btn btn-grad button51" style="margin-left: 20px;padding: 10px 20px">Show</a>
+            </div>
+        </td>
+        <td>
+            <div>
+                <div class="gallery">
+                    <a><img src="images/f.jpg" id="div6" height=250px width=400px></a>
+                </div>
+                <a class="btn btn-grad button6" style="margin-left: 90px; padding: 10px 20px">Slide Up</a>
+                <a class="btn btn-grad button61" style="margin-left: 10px;padding: 10px 15px">Slide Down</a>             
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+$(document).ready(function(){
+  $(".button1").click(function(){
+    $("#div1").fadeOut();
+
+  });
+});
+    
+$(document).ready(function(){
+  $(".button2").click(function(){
+    $("#div2").fadeToggle();
+
+  });
+});
+    
+$(document).ready(function(){
+  $(".button3").click(function(){
+    $("#div3").slideUp("slow");
+  });
+});
+    
+$(document).ready(function(){
+  $(".button4").click(function(){
+    $("#div4").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".button5").click(function(){
+    $("#div5").hide("slow");
+  });
+  $(".button51").click(function(){
+    $("#div5").show("slow");
+  });
+});
+    
+$(document).ready(function(){
+  $(".button6").click(function(){
+    $("#div6").slideUp();
+  });
+  $(".button61").click(function(){
+    $("#div6").slideDown();
+  });
+});
+</script>
+</script>
+</html>

@@ -1,0 +1,29 @@
+h1{
+        font-family: 'Courgette', cursive;
+        font-size: 50px;
+    }
+    body{
+        font-family: 'Righteous', cursive;
+        background: url(../images/1.jpg) ;
+        background-size: cover;
+    }
+    div.gallery{
+	    margin:10px;
+        border: 0px solid;
+	    text-align:center
+	}
+    
+    .btn-grad {background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC 51%, #FC354C 100%)}
+
+    .btn-grad:hover { background-position: right center; }
+
+    .btn {
+        margin-left: 160px;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+    }
